@@ -410,6 +410,20 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+  /* ヘッダー調整 */
+  .nav {
+    height: 70px;
+    padding: 0 1rem;
+  }
+
+  .nav-logo-img {
+    height: 36px;
+  }
+
+  .nav-logo-text {
+    font-size: 1.5rem;
+  }
+
   .nav-toggle {
     display: flex;
   }
@@ -417,10 +431,12 @@ body {
   .nav-menu {
     display: none;
     position: absolute;
-    top: 120px;
+    top: 70px;
     left: 0;
     right: 0;
-    background: var(--color-bg);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     flex-direction: column;
     padding: 1rem 1.5rem;
     gap: 1rem;
@@ -431,19 +447,71 @@ body {
     display: flex;
   }
 
+  /* ヒーロー調整 */
+  .hero-catchcopy {
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+  }
+
   .hero-brand {
-    font-size: 3.5rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.05em;
   }
 
-  .company-table th {
-    width: 100px;
+  /* ページ上部の余白調整 */
+  .products-page,
+  .company-page {
+    padding-top: 6rem;
   }
 
+  .product-detail {
+    padding: 6rem 0 3rem;
+  }
+
+  /* セクション調整 */
+  .section {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  /* プロダクト調整 */
   .products-grid {
     grid-template-columns: 1fr;
   }
 
-  .section {
-    padding: 3rem 0;
+  .product-detail-title {
+    font-size: 1.5rem;
+  }
+
+  /* テーブル調整 */
+  .company-table th,
+  .company-table td {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+
+  .company-table th {
+    border-bottom: none;
+    padding-bottom: 0.25rem;
+  }
+
+  .company-table td {
+    padding-top: 0.25rem;
+  }
+
+  /* コンテナ調整 */
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* フォーム調整 */
+  .btn {
+    width: 100%;
+    text-align: center;
   }
 }
